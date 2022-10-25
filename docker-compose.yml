@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dapperdemo:
+    image: ${DOCKER_REGISTRY-}dapperdemo
+    build:
+      context: .
+      dockerfile: DapperDemo/Dockerfile
